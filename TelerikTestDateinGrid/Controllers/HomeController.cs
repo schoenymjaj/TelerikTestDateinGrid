@@ -35,6 +35,8 @@ namespace TelerikTestDateinGrid.Controllers
         {
             try
             {
+                TimeZone serverZone = TimeZone.CurrentTimeZone;
+
                 IList<DateDTO> dateDTOList = new List<DateDTO>();
 
                 DateDTO dateDTO1 = new DateDTO
